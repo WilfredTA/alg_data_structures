@@ -139,4 +139,3 @@ So, there are actually TWO ways to optimize within the context of big-O. You can
 
 ###Second way to optimize: for optimistic scenarios
 
-

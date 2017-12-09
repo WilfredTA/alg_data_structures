@@ -2,7 +2,23 @@
 
 // Algorithm for insertion sort:
 
-// Given an array, do: Loop startIdx = 1; Store gapIdx = startIdx tempVal = Remove val at startIdx. . while (gapIdx is >= the first idx of array) valLeft = gapIdx - 1; If valLeft > currentVal shift valLeft to the right gapIdx-- else insert val at startIdx break end /end while . startIdx++ /end loop
+// Given an array, do: 
+//Loop 
+  // startIdx = 1; 
+  //  Store gapIdx = startIdx 
+  // tempVal = Remove val at startIdx. . 
+  // while (gapIdx is >= the first idx of array) 
+    // valLeft = gapIdx - 1; 
+    // If valLeft > currentVal 
+      //shift valLeft to the right 
+      //gapIdx-- 
+    //else 
+      //insert val at startIdx 
+      //break 
+    //end 
+  ///end while . 
+  //startIdx++ 
+///end loop
 
 // Implementation:
 

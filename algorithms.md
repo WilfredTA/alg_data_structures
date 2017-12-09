@@ -68,7 +68,7 @@ Otherwise known as quadratic time. The amount of steps an algorithm takes to com
 Algorithms of O(N^2) are not regarded as efficient, nor scalable, since as data grows, they rapidly become computationally expensive.
 
 
-###Two ways to optimize
+###Two ways to optimize. First, with big-O for worst case scenarios:
 
 First, optimize for worst-case scenarios, which means bringing your algorithms down to constant time or as close to constant time as possible.
 
@@ -133,4 +133,10 @@ The above is an example of optimizing in terms of Big-O, or optimizing for worst
 But, the most efficient algorithm according to Big-O is not necessarily the most efficient algorithm in cases that are not worst-case scenarios. Further, two algorithms that run in the same time complexity are not necessarily equally as efficient.
 
 Note that O(N) simply means that the number of steps increases linearly as the number of elements increases linearly. It does NOT mean that the number of steps always === number of elements. One algorithm may increase by 1 step at a constant rate for every 1 element added to the data structure, while another algorithm may increase at a constant rate of 3 steps for every 1 element added to the data structure. Both run in linear time, described by O(N), but one is clearly 3 times as fast.
+
+
+So, there are actually TWO ways to optimize within the context of big-O. You can optimize for a better time complexity, but then optimize within that time complexity for the most efficient algorithm.
+
+###Second way to optimize: for optimistic scenarios
+
 

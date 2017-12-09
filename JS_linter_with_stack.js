@@ -24,7 +24,6 @@ const linter = (string) => {
   
  if (stack.length) {
   console.log("error, opening but no closing braces"); 
-   console.log(stack);
    return;
    
  }
@@ -37,9 +36,11 @@ const str2 = "{[]} pleerm"
 const str3 = "({)}"
 const str4 = "((())){}[]"
 const str5 = "[helloooo"
+const str6 = "}"
 
 console.log(linter(str1));
 console.log(linter(str2));
 console.log(linter(str3));
 console.log(linter(str4));
 console.log(linter(str5));
+console.log(linter(str6));

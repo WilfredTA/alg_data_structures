@@ -46,7 +46,7 @@ console.log(selectionSort([5,4,3,2,1]));
 // On the first passthrough for the above array, we make 4 comparisons (N-1)
 // On the second passthrough, we make 3 comparisons (N-2)
 // So, we always make (N-1) + N(-2)...(N-(N + 1)) or + 1 comparisons.
-// We also onl make, at most, 1 swap per passthrough
+// We also only make, at most, 1 swap per passthrough
 // In a worst case scenario, we make 1 swap per passthrough. (worst case scenario is not descending order)
 // So, in a worst case scenario, we make (N-1) + (N-2)+...(N-(N+1)) comparisons plus N - 1 swaps
 

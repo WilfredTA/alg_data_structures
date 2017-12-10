@@ -139,3 +139,37 @@ So, there are actually TWO ways to optimize within the context of big-O. You can
 
 ###Second way to optimize: for optimistic scenarios
 
+
+
+
+### Guidelines for recursion
+
+1. Recursion can be used any time a loop can be used
+2. Recursion is useful when the same algorithm needs to repeat within its own execution.
+
+Recursive solutions require a base case which is usually a conditional.
+Recursive solutions return a value that is used as a parameter for a subsequent call.
+
+
+#### Example: A recursive solution to Array.prototype.map:
+
+```
+const map = (array, currentIdx, callback) => {
+  if (currentIdx > array.length -1){
+   return array; 
+  }
+  
+  array[currentIdx] = callback(array[currentIdx]);
+  
+  array = map(array, currentIdx+1, callback);
+  
+};
+
+
+let array = [1,2,3];
+
+map(array, 0, function(el) { return el*2});
+
+console.log(array);
+```
+

@@ -53,7 +53,9 @@ But n halves each time a new level is created, so, for each level *j*, there are
 
 num of operations done on a single level j= 6n / 2^*j* which can equal, at most 6n since 6n is the upper bound for the number of operations at the first level of the tree with the largest number of elements in the input. So, at most, there are 6n operations at each level of merge sort's recursion.
 
-Therefore, the total number of operations performed by merge sort is eqaul to total number of levels * the number of operations on that level: 
+Therefore, the total number of operations performed by merge sort is eqaul to total number of levels * the number of operations on that level. The total number of levels is actually log 2 of (N) + 1 (an array of eight elements is level 0, two arrays of 4 elements for level 1, 4 arrays of 2 elements for level 2, 8 arrays of 1 element for level 3, which is a total of 4 levels).
 
---> 6N * log 2 of (N)
+So, we have log 2 of (N) + 1 levels and 6N operations at most on each level, which is the same as 6N log 2 of (N) times plus an additional 6N to account for the additional level:
+
+--> 6N * log 2 of (N) + 6N
 *QED*
